@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.007 ns
+From           : led:inst1|light[1]
+To             : led[1]
+From Clock     : clk50m
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk50m'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 169.78 MHz ( period = 5.890 ns )
+From           : frequencies:inst|time[25]
+To             : frequencies:inst|time[23]
+From Clock     : clk50m
+To Clock       : clk50m
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

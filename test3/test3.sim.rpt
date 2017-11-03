@@ -1,0 +1,397 @@
+Simulator report for test3
+Thu Nov 02 12:54:48 2017
+Quartus II Version 7.2 Build 151 09/26/2007 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 108 nodes    ;
+; Simulation Coverage         ;      16.54 % ;
+; Total Number of Transitions ; 718          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C8Q208C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      16.54 % ;
+; Total nodes checked                                 ; 108          ;
+; Total output ports checked                          ; 133          ;
+; Total output ports with complete 1/0-value coverage ; 22           ;
+; Total output ports with no 1/0-value coverage       ; 102          ;
+; Total output ports with no 1-value coverage         ; 104          ;
+; Total output ports with no 0-value coverage         ; 109          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |test3|frequencies:inst|Add0~312 ; |test3|frequencies:inst|Add0~312 ; combout          ;
+; |test3|frequencies:inst|Add0~312 ; |test3|frequencies:inst|Add0~313 ; cout             ;
+; |test3|frequencies:inst|Add0~314 ; |test3|frequencies:inst|Add0~314 ; combout          ;
+; |test3|frequencies:inst|Add0~314 ; |test3|frequencies:inst|Add0~315 ; cout             ;
+; |test3|frequencies:inst|Add0~316 ; |test3|frequencies:inst|Add0~316 ; combout          ;
+; |test3|frequencies:inst|Add0~316 ; |test3|frequencies:inst|Add0~317 ; cout             ;
+; |test3|frequencies:inst|Add0~318 ; |test3|frequencies:inst|Add0~318 ; combout          ;
+; |test3|frequencies:inst|Add0~318 ; |test3|frequencies:inst|Add0~319 ; cout             ;
+; |test3|frequencies:inst|Add0~320 ; |test3|frequencies:inst|Add0~320 ; combout          ;
+; |test3|frequencies:inst|Add0~320 ; |test3|frequencies:inst|Add0~321 ; cout             ;
+; |test3|frequencies:inst|Add0~322 ; |test3|frequencies:inst|Add0~322 ; combout          ;
+; |test3|frequencies:inst|Add0~322 ; |test3|frequencies:inst|Add0~323 ; cout             ;
+; |test3|frequencies:inst|Add0~324 ; |test3|frequencies:inst|Add0~324 ; combout          ;
+; |test3|led:inst1|Equal0~59       ; |test3|led:inst1|Equal0~59       ; combout          ;
+; |test3|frequencies:inst|time[0]  ; |test3|frequencies:inst|time[0]  ; regout           ;
+; |test3|frequencies:inst|time[4]  ; |test3|frequencies:inst|time[4]  ; regout           ;
+; |test3|frequencies:inst|time[3]  ; |test3|frequencies:inst|time[3]  ; regout           ;
+; |test3|frequencies:inst|time[2]  ; |test3|frequencies:inst|time[2]  ; regout           ;
+; |test3|frequencies:inst|time[1]  ; |test3|frequencies:inst|time[1]  ; regout           ;
+; |test3|frequencies:inst|m~202    ; |test3|frequencies:inst|m~202    ; combout          ;
+; |test3|clk50m                    ; |test3|clk50m~corein             ; combout          ;
+; |test3|clk50m~clkctrl            ; |test3|clk50m~clkctrl            ; outclk           ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |test3|frequencies:inst|Add0~324   ; |test3|frequencies:inst|Add0~325   ; cout             ;
+; |test3|frequencies:inst|Add0~326   ; |test3|frequencies:inst|Add0~326   ; combout          ;
+; |test3|frequencies:inst|Add0~326   ; |test3|frequencies:inst|Add0~327   ; cout             ;
+; |test3|frequencies:inst|Add0~328   ; |test3|frequencies:inst|Add0~328   ; combout          ;
+; |test3|frequencies:inst|Add0~328   ; |test3|frequencies:inst|Add0~329   ; cout             ;
+; |test3|frequencies:inst|Add0~330   ; |test3|frequencies:inst|Add0~330   ; combout          ;
+; |test3|frequencies:inst|Add0~330   ; |test3|frequencies:inst|Add0~331   ; cout             ;
+; |test3|frequencies:inst|Add0~332   ; |test3|frequencies:inst|Add0~332   ; combout          ;
+; |test3|frequencies:inst|Add0~332   ; |test3|frequencies:inst|Add0~333   ; cout             ;
+; |test3|frequencies:inst|Add0~334   ; |test3|frequencies:inst|Add0~334   ; combout          ;
+; |test3|frequencies:inst|Add0~334   ; |test3|frequencies:inst|Add0~335   ; cout             ;
+; |test3|frequencies:inst|Add0~336   ; |test3|frequencies:inst|Add0~336   ; combout          ;
+; |test3|frequencies:inst|Add0~336   ; |test3|frequencies:inst|Add0~337   ; cout             ;
+; |test3|frequencies:inst|Add0~338   ; |test3|frequencies:inst|Add0~338   ; combout          ;
+; |test3|frequencies:inst|Add0~338   ; |test3|frequencies:inst|Add0~339   ; cout             ;
+; |test3|frequencies:inst|Add0~340   ; |test3|frequencies:inst|Add0~340   ; combout          ;
+; |test3|frequencies:inst|Add0~340   ; |test3|frequencies:inst|Add0~341   ; cout             ;
+; |test3|frequencies:inst|Add0~342   ; |test3|frequencies:inst|Add0~342   ; combout          ;
+; |test3|frequencies:inst|Add0~342   ; |test3|frequencies:inst|Add0~343   ; cout             ;
+; |test3|frequencies:inst|Add0~344   ; |test3|frequencies:inst|Add0~344   ; combout          ;
+; |test3|frequencies:inst|Add0~344   ; |test3|frequencies:inst|Add0~345   ; cout             ;
+; |test3|frequencies:inst|Add0~346   ; |test3|frequencies:inst|Add0~346   ; combout          ;
+; |test3|frequencies:inst|Add0~346   ; |test3|frequencies:inst|Add0~347   ; cout             ;
+; |test3|frequencies:inst|Add0~348   ; |test3|frequencies:inst|Add0~348   ; combout          ;
+; |test3|frequencies:inst|Add0~348   ; |test3|frequencies:inst|Add0~349   ; cout             ;
+; |test3|frequencies:inst|Add0~350   ; |test3|frequencies:inst|Add0~350   ; combout          ;
+; |test3|frequencies:inst|Add0~350   ; |test3|frequencies:inst|Add0~351   ; cout             ;
+; |test3|frequencies:inst|Add0~352   ; |test3|frequencies:inst|Add0~352   ; combout          ;
+; |test3|frequencies:inst|Add0~352   ; |test3|frequencies:inst|Add0~353   ; cout             ;
+; |test3|frequencies:inst|Add0~354   ; |test3|frequencies:inst|Add0~354   ; combout          ;
+; |test3|frequencies:inst|Add0~354   ; |test3|frequencies:inst|Add0~355   ; cout             ;
+; |test3|frequencies:inst|Add0~356   ; |test3|frequencies:inst|Add0~356   ; combout          ;
+; |test3|frequencies:inst|Add0~356   ; |test3|frequencies:inst|Add0~357   ; cout             ;
+; |test3|frequencies:inst|Add0~358   ; |test3|frequencies:inst|Add0~358   ; combout          ;
+; |test3|frequencies:inst|Add0~358   ; |test3|frequencies:inst|Add0~359   ; cout             ;
+; |test3|frequencies:inst|Add0~360   ; |test3|frequencies:inst|Add0~360   ; combout          ;
+; |test3|frequencies:inst|Add0~360   ; |test3|frequencies:inst|Add0~361   ; cout             ;
+; |test3|frequencies:inst|Add0~362   ; |test3|frequencies:inst|Add0~362   ; combout          ;
+; |test3|led:inst1|light[7]          ; |test3|led:inst1|light[7]          ; regout           ;
+; |test3|led:inst1|light[6]          ; |test3|led:inst1|light[6]          ; regout           ;
+; |test3|led:inst1|light[5]          ; |test3|led:inst1|light[5]          ; regout           ;
+; |test3|led:inst1|light[4]          ; |test3|led:inst1|light[4]          ; regout           ;
+; |test3|led:inst1|light[3]          ; |test3|led:inst1|light[3]          ; regout           ;
+; |test3|led:inst1|light[0]          ; |test3|led:inst1|light[0]          ; regout           ;
+; |test3|led:inst1|Equal0~58         ; |test3|led:inst1|Equal0~58         ; combout          ;
+; |test3|frequencies:inst|m          ; |test3|frequencies:inst|m          ; regout           ;
+; |test3|frequencies:inst|time[22]   ; |test3|frequencies:inst|time[22]   ; regout           ;
+; |test3|frequencies:inst|time[21]   ; |test3|frequencies:inst|time[21]   ; regout           ;
+; |test3|frequencies:inst|m~198      ; |test3|frequencies:inst|m~198      ; combout          ;
+; |test3|frequencies:inst|time[20]   ; |test3|frequencies:inst|time[20]   ; regout           ;
+; |test3|frequencies:inst|time[19]   ; |test3|frequencies:inst|time[19]   ; regout           ;
+; |test3|frequencies:inst|time[14]   ; |test3|frequencies:inst|time[14]   ; regout           ;
+; |test3|frequencies:inst|time[13]   ; |test3|frequencies:inst|time[13]   ; regout           ;
+; |test3|frequencies:inst|time[12]   ; |test3|frequencies:inst|time[12]   ; regout           ;
+; |test3|frequencies:inst|time[10]   ; |test3|frequencies:inst|time[10]   ; regout           ;
+; |test3|frequencies:inst|m~199      ; |test3|frequencies:inst|m~199      ; combout          ;
+; |test3|frequencies:inst|m~200      ; |test3|frequencies:inst|m~200      ; combout          ;
+; |test3|frequencies:inst|time[9]    ; |test3|frequencies:inst|time[9]    ; regout           ;
+; |test3|frequencies:inst|time[8]    ; |test3|frequencies:inst|time[8]    ; regout           ;
+; |test3|frequencies:inst|time[7]    ; |test3|frequencies:inst|time[7]    ; regout           ;
+; |test3|frequencies:inst|m~203      ; |test3|frequencies:inst|m~203      ; combout          ;
+; |test3|frequencies:inst|time[11]   ; |test3|frequencies:inst|time[11]   ; regout           ;
+; |test3|frequencies:inst|time[24]   ; |test3|frequencies:inst|time[24]   ; regout           ;
+; |test3|frequencies:inst|time[25]   ; |test3|frequencies:inst|time[25]   ; regout           ;
+; |test3|frequencies:inst|time[23]   ; |test3|frequencies:inst|time[23]   ; regout           ;
+; |test3|frequencies:inst|m~204      ; |test3|frequencies:inst|m~204      ; combout          ;
+; |test3|frequencies:inst|time[18]   ; |test3|frequencies:inst|time[18]   ; regout           ;
+; |test3|frequencies:inst|time[16]   ; |test3|frequencies:inst|time[16]   ; regout           ;
+; |test3|frequencies:inst|time[17]   ; |test3|frequencies:inst|time[17]   ; regout           ;
+; |test3|frequencies:inst|time[15]   ; |test3|frequencies:inst|time[15]   ; regout           ;
+; |test3|frequencies:inst|m~205      ; |test3|frequencies:inst|m~205      ; combout          ;
+; |test3|frequencies:inst|time[6]    ; |test3|frequencies:inst|time[6]    ; regout           ;
+; |test3|frequencies:inst|m~206      ; |test3|frequencies:inst|m~206      ; combout          ;
+; |test3|frequencies:inst|Equal1~118 ; |test3|frequencies:inst|Equal1~118 ; combout          ;
+; |test3|frequencies:inst|Equal1~119 ; |test3|frequencies:inst|Equal1~119 ; combout          ;
+; |test3|frequencies:inst|Equal1~120 ; |test3|frequencies:inst|Equal1~120 ; combout          ;
+; |test3|frequencies:inst|Equal1~121 ; |test3|frequencies:inst|Equal1~121 ; combout          ;
+; |test3|frequencies:inst|m~207      ; |test3|frequencies:inst|m~207      ; combout          ;
+; |test3|frequencies:inst|time~441   ; |test3|frequencies:inst|time~441   ; combout          ;
+; |test3|frequencies:inst|time~442   ; |test3|frequencies:inst|time~442   ; combout          ;
+; |test3|frequencies:inst|time~443   ; |test3|frequencies:inst|time~443   ; combout          ;
+; |test3|frequencies:inst|time~444   ; |test3|frequencies:inst|time~444   ; combout          ;
+; |test3|frequencies:inst|time~445   ; |test3|frequencies:inst|time~445   ; combout          ;
+; |test3|frequencies:inst|time~446   ; |test3|frequencies:inst|time~446   ; combout          ;
+; |test3|frequencies:inst|time~447   ; |test3|frequencies:inst|time~447   ; combout          ;
+; |test3|frequencies:inst|time~448   ; |test3|frequencies:inst|time~448   ; combout          ;
+; |test3|frequencies:inst|time~449   ; |test3|frequencies:inst|time~449   ; combout          ;
+; |test3|frequencies:inst|time~450   ; |test3|frequencies:inst|time~450   ; combout          ;
+; |test3|frequencies:inst|time~451   ; |test3|frequencies:inst|time~451   ; combout          ;
+; |test3|frequencies:inst|time~452   ; |test3|frequencies:inst|time~452   ; combout          ;
+; |test3|led:inst1|light[2]~52       ; |test3|led:inst1|light[2]~52       ; combout          ;
+; |test3|led:inst1|light[1]~53       ; |test3|led:inst1|light[1]~53       ; combout          ;
+; |test3|frequencies:inst|clk_1~2    ; |test3|frequencies:inst|clk_1~2    ; combout          ;
+; |test3|led[7]                      ; |test3|led[7]                      ; padio            ;
+; |test3|led[6]                      ; |test3|led[6]                      ; padio            ;
+; |test3|led[5]                      ; |test3|led[5]                      ; padio            ;
+; |test3|led[4]                      ; |test3|led[4]                      ; padio            ;
+; |test3|led[3]                      ; |test3|led[3]                      ; padio            ;
+; |test3|led[1]                      ; |test3|led[1]                      ; padio            ;
+; |test3|led[0]                      ; |test3|led[0]                      ; padio            ;
+; |test3|reset                       ; |test3|reset~corein                ; combout          ;
+; |test3|reset~clkctrl               ; |test3|reset~clkctrl               ; outclk           ;
+; |test3|led:inst1|light[7]~feeder   ; |test3|led:inst1|light[7]~feeder   ; combout          ;
+; |test3|led:inst1|light[5]~feeder   ; |test3|led:inst1|light[5]~feeder   ; combout          ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |test3|frequencies:inst|Add0~324      ; |test3|frequencies:inst|Add0~325      ; cout             ;
+; |test3|frequencies:inst|Add0~326      ; |test3|frequencies:inst|Add0~326      ; combout          ;
+; |test3|frequencies:inst|Add0~326      ; |test3|frequencies:inst|Add0~327      ; cout             ;
+; |test3|frequencies:inst|Add0~328      ; |test3|frequencies:inst|Add0~328      ; combout          ;
+; |test3|frequencies:inst|Add0~328      ; |test3|frequencies:inst|Add0~329      ; cout             ;
+; |test3|frequencies:inst|Add0~330      ; |test3|frequencies:inst|Add0~330      ; combout          ;
+; |test3|frequencies:inst|Add0~330      ; |test3|frequencies:inst|Add0~331      ; cout             ;
+; |test3|frequencies:inst|Add0~332      ; |test3|frequencies:inst|Add0~332      ; combout          ;
+; |test3|frequencies:inst|Add0~332      ; |test3|frequencies:inst|Add0~333      ; cout             ;
+; |test3|frequencies:inst|Add0~334      ; |test3|frequencies:inst|Add0~334      ; combout          ;
+; |test3|frequencies:inst|Add0~334      ; |test3|frequencies:inst|Add0~335      ; cout             ;
+; |test3|frequencies:inst|Add0~336      ; |test3|frequencies:inst|Add0~336      ; combout          ;
+; |test3|frequencies:inst|Add0~336      ; |test3|frequencies:inst|Add0~337      ; cout             ;
+; |test3|frequencies:inst|Add0~338      ; |test3|frequencies:inst|Add0~338      ; combout          ;
+; |test3|frequencies:inst|Add0~338      ; |test3|frequencies:inst|Add0~339      ; cout             ;
+; |test3|frequencies:inst|Add0~340      ; |test3|frequencies:inst|Add0~340      ; combout          ;
+; |test3|frequencies:inst|Add0~340      ; |test3|frequencies:inst|Add0~341      ; cout             ;
+; |test3|frequencies:inst|Add0~342      ; |test3|frequencies:inst|Add0~342      ; combout          ;
+; |test3|frequencies:inst|Add0~342      ; |test3|frequencies:inst|Add0~343      ; cout             ;
+; |test3|frequencies:inst|Add0~344      ; |test3|frequencies:inst|Add0~344      ; combout          ;
+; |test3|frequencies:inst|Add0~344      ; |test3|frequencies:inst|Add0~345      ; cout             ;
+; |test3|frequencies:inst|Add0~346      ; |test3|frequencies:inst|Add0~346      ; combout          ;
+; |test3|frequencies:inst|Add0~346      ; |test3|frequencies:inst|Add0~347      ; cout             ;
+; |test3|frequencies:inst|Add0~348      ; |test3|frequencies:inst|Add0~348      ; combout          ;
+; |test3|frequencies:inst|Add0~348      ; |test3|frequencies:inst|Add0~349      ; cout             ;
+; |test3|frequencies:inst|Add0~350      ; |test3|frequencies:inst|Add0~350      ; combout          ;
+; |test3|frequencies:inst|Add0~350      ; |test3|frequencies:inst|Add0~351      ; cout             ;
+; |test3|frequencies:inst|Add0~352      ; |test3|frequencies:inst|Add0~352      ; combout          ;
+; |test3|frequencies:inst|Add0~352      ; |test3|frequencies:inst|Add0~353      ; cout             ;
+; |test3|frequencies:inst|Add0~354      ; |test3|frequencies:inst|Add0~354      ; combout          ;
+; |test3|frequencies:inst|Add0~354      ; |test3|frequencies:inst|Add0~355      ; cout             ;
+; |test3|frequencies:inst|Add0~356      ; |test3|frequencies:inst|Add0~356      ; combout          ;
+; |test3|frequencies:inst|Add0~356      ; |test3|frequencies:inst|Add0~357      ; cout             ;
+; |test3|frequencies:inst|Add0~358      ; |test3|frequencies:inst|Add0~358      ; combout          ;
+; |test3|frequencies:inst|Add0~358      ; |test3|frequencies:inst|Add0~359      ; cout             ;
+; |test3|frequencies:inst|Add0~360      ; |test3|frequencies:inst|Add0~360      ; combout          ;
+; |test3|frequencies:inst|Add0~360      ; |test3|frequencies:inst|Add0~361      ; cout             ;
+; |test3|frequencies:inst|Add0~362      ; |test3|frequencies:inst|Add0~362      ; combout          ;
+; |test3|led:inst1|light[7]             ; |test3|led:inst1|light[7]             ; regout           ;
+; |test3|led:inst1|light[6]             ; |test3|led:inst1|light[6]             ; regout           ;
+; |test3|led:inst1|light[5]             ; |test3|led:inst1|light[5]             ; regout           ;
+; |test3|led:inst1|light[4]             ; |test3|led:inst1|light[4]             ; regout           ;
+; |test3|led:inst1|light[3]             ; |test3|led:inst1|light[3]             ; regout           ;
+; |test3|led:inst1|light[2]             ; |test3|led:inst1|light[2]             ; regout           ;
+; |test3|led:inst1|light[1]             ; |test3|led:inst1|light[1]             ; regout           ;
+; |test3|led:inst1|light[0]             ; |test3|led:inst1|light[0]             ; regout           ;
+; |test3|frequencies:inst|clk_1         ; |test3|frequencies:inst|clk_1         ; regout           ;
+; |test3|led:inst1|Equal0~58            ; |test3|led:inst1|Equal0~58            ; combout          ;
+; |test3|frequencies:inst|m             ; |test3|frequencies:inst|m             ; regout           ;
+; |test3|frequencies:inst|time[22]      ; |test3|frequencies:inst|time[22]      ; regout           ;
+; |test3|frequencies:inst|time[21]      ; |test3|frequencies:inst|time[21]      ; regout           ;
+; |test3|frequencies:inst|m~198         ; |test3|frequencies:inst|m~198         ; combout          ;
+; |test3|frequencies:inst|time[20]      ; |test3|frequencies:inst|time[20]      ; regout           ;
+; |test3|frequencies:inst|time[19]      ; |test3|frequencies:inst|time[19]      ; regout           ;
+; |test3|frequencies:inst|time[14]      ; |test3|frequencies:inst|time[14]      ; regout           ;
+; |test3|frequencies:inst|time[13]      ; |test3|frequencies:inst|time[13]      ; regout           ;
+; |test3|frequencies:inst|time[12]      ; |test3|frequencies:inst|time[12]      ; regout           ;
+; |test3|frequencies:inst|time[10]      ; |test3|frequencies:inst|time[10]      ; regout           ;
+; |test3|frequencies:inst|m~199         ; |test3|frequencies:inst|m~199         ; combout          ;
+; |test3|frequencies:inst|m~200         ; |test3|frequencies:inst|m~200         ; combout          ;
+; |test3|frequencies:inst|time[5]       ; |test3|frequencies:inst|time[5]       ; regout           ;
+; |test3|frequencies:inst|time[9]       ; |test3|frequencies:inst|time[9]       ; regout           ;
+; |test3|frequencies:inst|time[8]       ; |test3|frequencies:inst|time[8]       ; regout           ;
+; |test3|frequencies:inst|time[7]       ; |test3|frequencies:inst|time[7]       ; regout           ;
+; |test3|frequencies:inst|m~201         ; |test3|frequencies:inst|m~201         ; combout          ;
+; |test3|frequencies:inst|m~203         ; |test3|frequencies:inst|m~203         ; combout          ;
+; |test3|frequencies:inst|time[11]      ; |test3|frequencies:inst|time[11]      ; regout           ;
+; |test3|frequencies:inst|time[24]      ; |test3|frequencies:inst|time[24]      ; regout           ;
+; |test3|frequencies:inst|time[25]      ; |test3|frequencies:inst|time[25]      ; regout           ;
+; |test3|frequencies:inst|time[23]      ; |test3|frequencies:inst|time[23]      ; regout           ;
+; |test3|frequencies:inst|m~204         ; |test3|frequencies:inst|m~204         ; combout          ;
+; |test3|frequencies:inst|time[18]      ; |test3|frequencies:inst|time[18]      ; regout           ;
+; |test3|frequencies:inst|time[16]      ; |test3|frequencies:inst|time[16]      ; regout           ;
+; |test3|frequencies:inst|time[17]      ; |test3|frequencies:inst|time[17]      ; regout           ;
+; |test3|frequencies:inst|time[15]      ; |test3|frequencies:inst|time[15]      ; regout           ;
+; |test3|frequencies:inst|m~205         ; |test3|frequencies:inst|m~205         ; combout          ;
+; |test3|frequencies:inst|time[6]       ; |test3|frequencies:inst|time[6]       ; regout           ;
+; |test3|frequencies:inst|m~206         ; |test3|frequencies:inst|m~206         ; combout          ;
+; |test3|frequencies:inst|Equal1~118    ; |test3|frequencies:inst|Equal1~118    ; combout          ;
+; |test3|frequencies:inst|Equal1~119    ; |test3|frequencies:inst|Equal1~119    ; combout          ;
+; |test3|frequencies:inst|Equal1~120    ; |test3|frequencies:inst|Equal1~120    ; combout          ;
+; |test3|frequencies:inst|Equal1~121    ; |test3|frequencies:inst|Equal1~121    ; combout          ;
+; |test3|frequencies:inst|m~207         ; |test3|frequencies:inst|m~207         ; combout          ;
+; |test3|frequencies:inst|time~441      ; |test3|frequencies:inst|time~441      ; combout          ;
+; |test3|frequencies:inst|time~442      ; |test3|frequencies:inst|time~442      ; combout          ;
+; |test3|frequencies:inst|time~443      ; |test3|frequencies:inst|time~443      ; combout          ;
+; |test3|frequencies:inst|time~444      ; |test3|frequencies:inst|time~444      ; combout          ;
+; |test3|frequencies:inst|time~445      ; |test3|frequencies:inst|time~445      ; combout          ;
+; |test3|frequencies:inst|time~446      ; |test3|frequencies:inst|time~446      ; combout          ;
+; |test3|frequencies:inst|time~447      ; |test3|frequencies:inst|time~447      ; combout          ;
+; |test3|frequencies:inst|time~448      ; |test3|frequencies:inst|time~448      ; combout          ;
+; |test3|frequencies:inst|time~449      ; |test3|frequencies:inst|time~449      ; combout          ;
+; |test3|frequencies:inst|time~450      ; |test3|frequencies:inst|time~450      ; combout          ;
+; |test3|frequencies:inst|time~451      ; |test3|frequencies:inst|time~451      ; combout          ;
+; |test3|frequencies:inst|time~452      ; |test3|frequencies:inst|time~452      ; combout          ;
+; |test3|led:inst1|light[1]~53          ; |test3|led:inst1|light[1]~53          ; combout          ;
+; |test3|frequencies:inst|clk_1~2       ; |test3|frequencies:inst|clk_1~2       ; combout          ;
+; |test3|led[7]                         ; |test3|led[7]                         ; padio            ;
+; |test3|led[6]                         ; |test3|led[6]                         ; padio            ;
+; |test3|led[5]                         ; |test3|led[5]                         ; padio            ;
+; |test3|led[4]                         ; |test3|led[4]                         ; padio            ;
+; |test3|led[3]                         ; |test3|led[3]                         ; padio            ;
+; |test3|led[2]                         ; |test3|led[2]                         ; padio            ;
+; |test3|led[0]                         ; |test3|led[0]                         ; padio            ;
+; |test3|reset                          ; |test3|reset~corein                   ; combout          ;
+; |test3|reset~clkctrl                  ; |test3|reset~clkctrl                  ; outclk           ;
+; |test3|frequencies:inst|clk_1~clkctrl ; |test3|frequencies:inst|clk_1~clkctrl ; outclk           ;
+; |test3|led:inst1|light[7]~feeder      ; |test3|led:inst1|light[7]~feeder      ; combout          ;
+; |test3|led:inst1|light[5]~feeder      ; |test3|led:inst1|light[5]~feeder      ; combout          ;
++---------------------------------------+---------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 7.2 Build 151 09/26/2007 SJ Full Version
+    Info: Processing started: Thu Nov 02 12:54:47 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off test3 -c test3
+Info: Using vector source file "H:/Quartus/test3/test3.vwf"
+Info: Inverted registers were found during simulation
+    Info: Register: |test3|led:inst1|light[1]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      16.54 %
+Info: Number of transitions in simulation is 718
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Allocated 167 megabytes of memory during processing
+    Info: Processing ended: Thu Nov 02 12:54:48 2017
+    Info: Elapsed time: 00:00:01
+
+

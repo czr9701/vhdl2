@@ -1,0 +1,72 @@
+|test3
+led[0] <= led:inst1.led_out[0]
+led[1] <= led:inst1.led_out[1]
+led[2] <= led:inst1.led_out[2]
+led[3] <= led:inst1.led_out[3]
+led[4] <= led:inst1.led_out[4]
+led[5] <= led:inst1.led_out[5]
+led[6] <= led:inst1.led_out[6]
+led[7] <= led:inst1.led_out[7]
+clk50m => frequencies:inst.clk_50M
+reset => led:inst1.rst_n
+
+
+|test3|led:inst1
+led_out[0] <= light[0].DB_MAX_OUTPUT_PORT_TYPE
+led_out[1] <= light[1].DB_MAX_OUTPUT_PORT_TYPE
+led_out[2] <= light[2].DB_MAX_OUTPUT_PORT_TYPE
+led_out[3] <= light[3].DB_MAX_OUTPUT_PORT_TYPE
+led_out[4] <= light[4].DB_MAX_OUTPUT_PORT_TYPE
+led_out[5] <= light[5].DB_MAX_OUTPUT_PORT_TYPE
+led_out[6] <= light[6].DB_MAX_OUTPUT_PORT_TYPE
+led_out[7] <= light[7].DB_MAX_OUTPUT_PORT_TYPE
+clk => light[7].CLK
+clk => light[6].CLK
+clk => light[5].CLK
+clk => light[4].CLK
+clk => light[3].CLK
+clk => light[2].CLK
+clk => light[1].CLK
+clk => light[0].CLK
+rst_n => light[7].ACLR
+rst_n => light[6].ACLR
+rst_n => light[5].ACLR
+rst_n => light[4].ACLR
+rst_n => light[3].ACLR
+rst_n => light[2].ACLR
+rst_n => light[1].PRESET
+rst_n => light[0].ACLR
+
+
+|test3|frequencies:inst
+clk_50M => time[25].CLK
+clk_50M => time[24].CLK
+clk_50M => time[23].CLK
+clk_50M => time[22].CLK
+clk_50M => time[21].CLK
+clk_50M => time[20].CLK
+clk_50M => time[19].CLK
+clk_50M => time[18].CLK
+clk_50M => time[17].CLK
+clk_50M => time[16].CLK
+clk_50M => time[15].CLK
+clk_50M => time[14].CLK
+clk_50M => time[13].CLK
+clk_50M => time[12].CLK
+clk_50M => time[11].CLK
+clk_50M => time[10].CLK
+clk_50M => time[9].CLK
+clk_50M => time[8].CLK
+clk_50M => time[7].CLK
+clk_50M => time[6].CLK
+clk_50M => time[5].CLK
+clk_50M => time[4].CLK
+clk_50M => time[3].CLK
+clk_50M => time[2].CLK
+clk_50M => time[1].CLK
+clk_50M => time[0].CLK
+clk_50M => clk_1~reg0.CLK
+clk_50M => m.CLK
+clk_1 <= clk_1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

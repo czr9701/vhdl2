@@ -1,0 +1,58 @@
+|test2
+SEVEN_SEGMENT[0] <= decoder_38:inst.y[0]
+SEVEN_SEGMENT[1] <= decoder_38:inst.y[1]
+SEVEN_SEGMENT[2] <= decoder_38:inst.y[2]
+SEVEN_SEGMENT[3] <= decoder_38:inst.y[3]
+SEVEN_SEGMENT[4] <= decoder_38:inst.y[4]
+SEVEN_SEGMENT[5] <= decoder_38:inst.y[5]
+SEVEN_SEGMENT[6] <= decoder_38:inst.y[6]
+SEVEN_SEGMENT[7] <= decoder_38:inst.y[7]
+A => decoder_38:inst.a
+B => decoder_38:inst.b
+C => decoder_38:inst.c
+EN => decoder_38:inst.en
+
+
+|test2|decoder_38:inst
+a => Mux7.IN10
+a => Mux6.IN10
+a => Mux5.IN10
+a => Mux4.IN10
+a => Mux3.IN10
+a => Mux2.IN10
+a => Mux1.IN10
+a => Mux0.IN10
+b => Mux7.IN9
+b => Mux6.IN9
+b => Mux5.IN9
+b => Mux4.IN9
+b => Mux3.IN9
+b => Mux2.IN9
+b => Mux1.IN9
+b => Mux0.IN9
+c => Mux7.IN8
+c => Mux6.IN8
+c => Mux5.IN8
+c => Mux4.IN8
+c => Mux3.IN8
+c => Mux2.IN8
+c => Mux1.IN8
+c => Mux0.IN8
+en => y~7.OUTPUTSELECT
+en => y~6.OUTPUTSELECT
+en => y~5.OUTPUTSELECT
+en => y~4.OUTPUTSELECT
+en => y~3.OUTPUTSELECT
+en => y~2.OUTPUTSELECT
+en => y~1.OUTPUTSELECT
+en => y~0.OUTPUTSELECT
+y[0] <= y~7.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y~6.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y~5.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y~4.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y~1.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
